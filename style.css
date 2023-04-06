@@ -1,0 +1,213 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      background: url(hero.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      font-family: Helvetica;
+      /* background: #c0ab9a; */
+}
+
+.title {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+}
+
+h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 12px;
+      font-weight: 400;
+      color: #fff;
+}
+
+.menu-strip {
+      background: #fff;
+      position: fixed;
+      width: 10%;
+      height: 100vh;
+      border-right: 1px solid rgba(0,0,0,0.1);
+      z-index: 1;
+}
+
+.toggle-btn {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.toggle-btn ion-icon {
+      font-size: 28px;
+      color: #a66f2c;
+}
+
+.nav .menu {
+      position: absolute;
+      width: 0%;
+      height: 100vh;
+      left: 10%;
+      background: #fff;
+}
+
+
+
+.images {
+      position: absolute;
+      width: 0%;
+      height: 100vh;
+      left: 55%;
+      background: url(01.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.bg {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: red;
+}
+
+.nav .menu ul {
+      list-style: none;
+      position: absolute;
+      top: 36%;
+      left: 36%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+}
+
+.nav .menu ul li {
+      color: #594637;
+      font-weight: lighter;
+      font-size: 30px;
+      line-height: 60px;
+}
+
+#order {
+      font-size: 16px;
+      font-weight: lighter;
+      color: #afafaf;
+}
+
+#tag {
+      font-size: 18px;
+      font-weight: lighter;
+      color: #afafaf;
+      transition: 0.3s;
+}
+
+.media {
+      position: absolute;
+      top: 80%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+}
+
+.media ul li {
+      display: inline-block !important;
+      color: #afafaf;
+      margin-left: 10px;
+      font-size: 18px;
+}
+
+.nav .menu ul li:hover #tag {
+      color: #a66f2c;
+      transition: 1s;
+}
+
+#menu {
+  background: linear-gradient(#5B5B5B,#5B5B5B) left no-repeat, #afafaf;
+  background-size:0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s;
+}
+
+#menu:hover {
+  background-size:100% 100%;
+}
+
+.bg1 {
+      display: block;
+      background: url(01.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg2 {
+      display: block;
+      background: url(02.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg3 {
+      display: block;
+      background: url(03.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg4 {
+      display: block;
+      background: url(04.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg5 {
+      display: block;
+      background: url(05.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.hide {
+      display: none;
+}
+
+@media(max-width: 768px) {
+      .images {
+            display: none;
+      }
+
+      .nav .menu {
+            width: 0%;
+            left: 20%;
+      }
+
+      .menu ul {
+            margin-top: 80px;
+            margin-left: -20px;
+
+      }
+
+      .menu-strip {
+            width: 20%;
+      }
+
+      .toggle-btn {
+            position: absolute;
+            transform: translate(-50%, -90%);
+      }
+
+      .menu li #menu {
+            font-size: 18px;
+      }
+
+      #tag{
+            display: none;
+      }
+
+      #order {
+            display: none;
+      }
+
+      .media {
+            display: none;
+      }
+}
